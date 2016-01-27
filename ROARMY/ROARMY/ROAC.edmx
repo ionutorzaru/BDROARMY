@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="roaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'roa.dbo.Angajati' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Angajati">
+          <Property Name="nrcrt" Type="int" />
+          <Property Name="nume" Type="nchar" MaxLength="10" />
+          <Property Name="prenume" Type="nchar" MaxLength="10" />
+          <Property Name="id" Type="nchar" MaxLength="10" />
+          <Property Name="parola" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'roa.dbo.Comandanti' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Comandanti">
+          <Property Name="nrcrt" Type="int" />
+          <Property Name="nume" Type="nvarchar(max)" />
+          <Property Name="prenume" Type="nvarchar(max)" />
+          <Property Name="id" Type="nvarchar(max)" />
+          <Property Name="parola" Type="nvarchar(max)" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'roa.dbo.dimineata' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dimineata">
+          <Property Name="nrcrt" Type="int" />
+          <Property Name="numemancare" Type="nvarchar(max)" />
+          <Property Name="calorii" Type="int" />
+          <Property Name="nrvoturi" Type="int" />
+          <Property Name="nrvoturinegative" Type="int" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'roa.dbo.Meniu' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Meniu">
+          <Property Name="nrcrt" Type="int" />
+          <Property Name="data" Type="date" />
+          <Property Name="dimineata" Type="nvarchar(max)" />
+          <Property Name="pranz" Type="nvarchar(max)" />
+          <Property Name="seara" Type="nvarchar(max)" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'roa.dbo.pranz' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="pranz">
+          <Property Name="nrcrt" Type="int" />
+          <Property Name="numemancare" Type="nvarchar(max)" />
+          <Property Name="calorii" Type="int" />
+          <Property Name="nrvoturi" Type="int" />
+          <Property Name="nrvoturinegative" Type="int" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'roa.dbo.seara' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="seara">
+          <Property Name="nrcrt" Type="int" />
+          <Property Name="numemancare" Type="nvarchar(max)" />
+          <Property Name="calorii" Type="int" />
+          <Property Name="nrvoturi" Type="int" />
+          <Property Name="nrvoturinegative" Type="int" />
+        </EntityType>-->
+        <EntityContainer Name="roaModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="roaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="roaEntities" annotation:LazyLoadingEnabled="true" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="roaModelStoreContainer" CdmEntityContainer="roaEntities" />
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
